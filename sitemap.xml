@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://books.30cm.net/about/index.html</loc>
+    
+    <lastmod>2017-12-09T07:07:41.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://books.30cm.net/tags/index.html</loc>
     
     <lastmod>2017-12-09T07:04:18.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://books.30cm.net/links/index.html</loc>
     
     <lastmod>2017-12-09T06:33:46.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://books.30cm.net/about/index.html</loc>
-    
-    <lastmod>2017-12-09T06:32:45.000Z</lastmod>
     
   </url>
   
