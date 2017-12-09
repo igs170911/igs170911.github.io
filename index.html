@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="不為繁華易匠心">
-    <meta name="msapplication-starturl" content="http://yoursite.com/">
+    <meta name="msapplication-starturl" content="http://books.30cm.net/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="不為繁華易匠心">
@@ -230,7 +230,7 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/">
+    <meta property="og:url" content="http://books.30cm.net/">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="不為繁華易匠心">
     <meta property="og:image" content="/img/favicon.png">
@@ -244,7 +244,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com" />
+        <link rel="canonical" href="http://books.30cm.net" />
     
 
     <!-- Structured-data for SEO -->
@@ -259,14 +259,14 @@
         "name": "不為繁華易匠心",
         "logo": "/img/favicon.png"
     },
-    "url": "http://yoursite.com",
+    "url": "http://books.30cm.net",
     "image": {
         "@type": "ImageObject",
         "url": "/img/favicon.png"
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://yoursite.com"
+        "@id": "http://books.30cm.net"
     },
     "description": "無聊男子的技術部落格"
 }
@@ -285,7 +285,8 @@
     <!-- Custom Head -->
     
 
-</head>
+<link rel="stylesheet" href="/css/prism-xonokai.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
     
@@ -351,7 +352,7 @@
             <input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
             <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
 
-            <input type="hidden" name="sitesearch" value="http://yoursite.com">
+            <input type="hidden" name="sitesearch" value="http://books.30cm.net">
         </form>
     </div>
 
@@ -383,6 +384,12 @@
         </button>
         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
             
+                <a class="index_share-link" href="/about" title="About">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        About
+                    </li>
+                </a>
+            
         </ul>
 
         <!-- Menu -->
@@ -409,7 +416,7 @@
             
 
             
-                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com" target="_blank">
+                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://books.30cm.net" target="_blank">
                     <li class="mdl-menu__item mdl-js-ripple-effect">
                         分享到 Facebook
                     </li>
@@ -431,6 +438,8 @@
     <div class="locate-thumbnail-symbol"></div>
 
     <!-- Pin on top -->
+    
+        
     
 
     <!-- Normal Post -->
@@ -554,15 +563,6 @@
     <li class="dropdown">
         <ul id="settings-dropdown" class="dropdown-menu">
             
-                <li>
-                    <a href="#" target="_blank" title="Email Me">
-                        
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
-                        
-                        Email Me
-                    </a>
-                </li>
-            
         </ul>
     </li>
 
@@ -601,6 +601,18 @@
     
 
     <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
     
 
     <!-- Article Number  -->
