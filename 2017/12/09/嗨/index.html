@@ -45,7 +45,7 @@
     
     <title>
         
-            物件導向程式設計  OnStart() ! | 
+            第一次就上手，Python 物件導向 | 
         
         不為繁華易匠心
     </title>
@@ -234,14 +234,14 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://books.30cm.net/2017/12/09/嗨/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="物件導向程式設計  OnStart() ! | 不為繁華易匠心">
+    <meta property="og:title" content="第一次就上手，Python 物件導向 | 不為繁華易匠心">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="無聊男子的技術部落格">
     <meta property="og:article:tag" content="python3"> <meta property="og:article:tag" content="物件導向"> <meta property="og:article:tag" content="攻城獅的寫作練習"> 
 
     
         <meta property="article:published_time" content="Sat Dec 09 2017 15:37:00 GMT+0800">
-        <meta property="article:modified_time" content="Mon Dec 11 2017 23:40:43 GMT+0800">
+        <meta property="article:modified_time" content="Mon Dec 11 2017 23:54:50 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -262,9 +262,9 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "mainEntityOfPage": "http://books.30cm.net/2017/12/09/嗨/index.html",
-    "headline": "物件導向程式設計  OnStart() !",
+    "headline": "第一次就上手，Python 物件導向",
     "datePublished": "Sat Dec 09 2017 15:37:00 GMT+0800",
-    "dateModified": "Mon Dec 11 2017 23:40:43 GMT+0800",
+    "dateModified": "Mon Dec 11 2017 23:54:50 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "王性驊",
@@ -371,7 +371,7 @@
         <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://lh3.googleusercontent.com/-XOhMIwtRY-A/Wi6jLbuywdI/AAAAAAAAAMg/0Bcla_Np5nc8zZPIIsMknRwfxe1097lrQCLcBGAs/s0/cat.png)">
     
             <p class="article-headline-p">
-                物件導向程式設計  OnStart() !
+                第一次就上手，Python 物件導向
             </p>
         </div>
 
@@ -479,8 +479,7 @@
         <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
 <p>寫程式的時候，很常聽到一句話 「 如果有人幫你做好了一個輪子，為什麼你還想要在自己重頭做一個輪子呢 」？</p>
 </blockquote>
-<p>其實不是我們自己想做一個輪子，而是有時候，這顆輪子不太合用，例如明明是騎腳踏車，但是腳踏車店老闆卻給了你一顆汽車的輪子，那當然是無法使用的。<del>那這時候你只要其實你只要換一間店就好了嘛，老闆有病嗎？</del> <br><br>類似上面這種狀況，如果你不跟人家買輪子而是自己生產輪子的時候，你會重頭想一個輪子的形狀，功能，甚至是材質呢？還是參考現有的輪子指改變大小，直接使用就好了？我想你應該是會選擇後者吧？<br><br>而物件導向的技術是以物件為中心在思考問題，也就是說，你可以把生活中任何的東西想像成一個物件，輪子就是物件的一種，那在本篇文章之中，除了會探討物件可以是什麼？以及如何決定要實作出哪些物件之外，更重要的是探討物件與物件之間的關係。</p>
-<p>我為什麼會寫這一篇呢？原因是物件導向很神秘，每次我自己在寫的時候都像下面這張圖片一樣</p>
+<p><br>在製造一輛汽車的時候，總是會用到輪子。如果是你在製造汽車，你會使用原本輪子的樣子，去改變大小，還是重新想一個不一樣形狀的輪子呢？<br><br>如果說，你會想要使用原本輪子的樣子去改變其中的一些元素，而不是重新想一個全新的輪子的話，恭喜你！你已經在享受物件導向的好處了唷！<br><br><br>而物件導向的技術是以物件為中心在思考問題，也就是說，你可以把生活中任何的東西想像成一個物件，輪子就是物件的一種，那在本篇文章之中，除了會探討物件可以是什麼？以及如何決定要實作出哪些物件之外，更重要的是探討物件與物件之間的關係。<br><br>準備好要一起來學物件導向了嗎？在這之前，我為什麼會寫這一篇呢？原因是物件導向很神秘，每次我自己在寫的時候都像下面這張圖片一樣</p>
 <div style="text-align: center"><br>    <img src="https://lh3.googleusercontent.com/l4CTBDL8rAEU-qFv_nZ_JAQrOLtdyvUfflEeM6R7QeVSgAiMo9hsB30ZlJ5eMpUWjm5hGciuRncG=s300"><br></div>
 
 <p>物件導向就是這麼神秘，即使看盡了書中的詳細說明，當第一次上路的時候，還是會手足無措，不知如何把書中的知識應用上來，這就是理論與實務上的差距。所以特此紀錄一下。</p>
@@ -495,18 +494,34 @@
 <p><span style=" border: 0px;color: #fff;background: #f44336;    border: 1px solid #f44336;
     border-radius: 4px;
     padding: 2px 5px;
-    margin: 0 1px;">物件</span> : 這是參考世界上的自然法則而生的東西，像是剛剛提到的輪子，你可以將輪子視為一個物件，你也可以將動物視為一個物件，不同的物件擁有不同的屬性<br><br>例如 ：輪子的屬性可能有 </p>
-<ol>
-<li>圓的 </li>
-<li>輪子的大小</li>
-</ol>
-<p>動物的屬性可能有：</p>
-<ol>
-<li>四隻腳</li>
-<li>兩隻眼睛</li>
-<li>一條尾巴</li>
-</ol>
-<p>等等屬性。</p>
+    margin: 0 1px;">物件</span> : 這是參考世界上的自然法則而生的東西，像是剛剛提到的輪子，你可以將輪子視為一個物件，你也可以將動物視為一個物件，不同的物件擁有不同的屬性<br></p>
+<p>例如 ：</p>
+<table>
+<thead>
+<tr>
+<th>num</th>
+<th style="text-align:center">物件</th>
+<th style="text-align:right">屬性 A</th>
+<th style="text-align:right">屬性  B</th>
+<th style="text-align:right">屬性 C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align:center"><strong>輪子</strong></td>
+<td style="text-align:right">圓的</td>
+<td style="text-align:right">大小</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align:center"><strong>動物</strong></td>
+<td style="text-align:right">四隻腳</td>
+<td style="text-align:right">兩隻眼睛</td>
+<td style="text-align:right">一條尾巴</td>
+</tr>
+</tbody>
+</table>
 <p>對物件大概有了基本的了解之後，我們就來談談物件導向程式設計吧 ! <br><br>為了簡化程式設計，物件導向的概念就是把複雜的函數切分成子函數即把 <strong>功能較多的函數區分開</strong> ，切成單一工能單一工能的小函數來降低系統的複雜度。</p>
 <p>最後再將這一系列的小函數，依照 <strong>順序執行</strong> ，換句話說，只要將程式視為一組物件的集合就可以了，而每一個物件都可以接收其他物件所傳遞過來的資料，並且處理這些資料。</p>
 <p>以 Python 的例子來說明，使用一般流程寫程式，以及使用物件導向寫程式在流程上的不同之處吧 !<br>假設我們要處理一個人所擁有的股票，我們想要印出誰誰誰擁有哪隻股票的問題時<br>使用一般流程我們會怎麼處理呢 ? </p>
