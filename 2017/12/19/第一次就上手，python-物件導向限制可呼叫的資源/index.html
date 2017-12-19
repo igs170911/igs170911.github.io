@@ -45,7 +45,7 @@
     
     <title>
         
-            過往 | 
+            第一次就上手，python 物件導向 [ 資源的呼叫與限制 ] | 
         
         不為繁華易匠心
     </title>
@@ -56,7 +56,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="身為一個專業的攻城獅，隨身攜帶電腦也是很正常的事、python、php、c、樹莓派、Arduino、以及機器學習的大小事.">
-    <meta name="keywords" content="python,gitlab,cicd,go,">
+    <meta name="keywords" content="python,gitlab,cicd,go,,python3,物件導向,攻城獅的寫作練習">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -217,7 +217,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="不為繁華易匠心">
-    <meta name="msapplication-starturl" content="http://books.30cm.net/archives/">
+    <meta name="msapplication-starturl" content="http://books.30cm.net/2017/12/19/第一次就上手，python-物件導向限制可呼叫的資源/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="不為繁華易匠心">
@@ -232,13 +232,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://books.30cm.net/archives/">
+    <meta property="og:url" content="http://books.30cm.net/2017/12/19/第一次就上手，python-物件導向限制可呼叫的資源/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="過往 | 不為繁華易匠心">
+    <meta property="og:title" content="第一次就上手，python 物件導向 [ 資源的呼叫與限制 ] | 不為繁華易匠心">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="身為一個專業的攻城獅，隨身攜帶電腦也是很正常的事、python、php、c、樹莓派、Arduino、以及機器學習的大小事.">
-    
+    <meta property="og:article:tag" content="python3"> <meta property="og:article:tag" content="物件導向"> <meta property="og:article:tag" content="攻城獅的寫作練習"> 
 
+    
+        <meta property="article:published_time" content="Tue Dec 19 2017 19:20:00 GMT+0800">
+        <meta property="article:modified_time" content="Wed Dec 20 2017 01:08:28 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -246,13 +249,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://books.30cm.net/archives/index.html" />
+        <link rel="canonical" href="http://books.30cm.net/2017/12/19/第一次就上手，python-物件導向限制可呼叫的資源/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://books.30cm.net/2017/12/19/第一次就上手，python-物件導向限制可呼叫的資源/index.html",
+    "headline": "第一次就上手，python 物件導向 [ 資源的呼叫與限制 ]",
+    "datePublished": "Tue Dec 19 2017 19:20:00 GMT+0800",
+    "dateModified": "Wed Dec 20 2017 01:08:28 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "王性驊",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "匠心，是傾注於作品中的精神、情感與神魂"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "不為繁華易匠心",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",python3,物件導向,攻城獅的寫作練習python,gitlab,cicd,go,",
+    "description": "身為一個專業的攻城獅，隨身攜帶電腦也是很正常的事、python、php、c、樹莓派、Arduino、以及機器學習的大小事.",
+}
+</script>
 
 
     
@@ -286,202 +319,305 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
-        
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#限制可呼叫的資源"><span class="post-toc-number">1.1.</span> <span class="post-toc-text"><a href="#&#x9650;&#x5236;&#x53EF;&#x547C;&#x53EB;&#x7684;&#x8CC7;&#x6E90;" class="headerlink" title="&#x9650;&#x5236;&#x53EF;&#x547C;&#x53EB;&#x7684;&#x8CC7;&#x6E90;"></a>&#x9650;&#x5236;&#x53EF;&#x547C;&#x53EB;&#x7684;&#x8CC7;&#x6E90;</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://lh3.googleusercontent.com/-ykoLrXoMtm4/WjlHeOGqflI/AAAAAAAAANw/7zWnnERXFosCkS_tcQVzVy3zIFPEqPF4QCLcBGAs/s0/pexels-photo-715807.png">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://lh3.googleusercontent.com/-ykoLrXoMtm4/WjlHeOGqflI/AAAAAAAAANw/7zWnnERXFosCkS_tcQVzVy3zIFPEqPF4QCLcBGAs/s0/pexels-photo-715807.png)">
+    
+            <p class="article-headline-p">
+                第一次就上手，python 物件導向 [ 資源的呼叫與限制 ]
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>王性驊</strong>
+        <span>12月 19, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/12/19/第一次就上手，python-物件導向限制可呼叫的資源/">第一次就上手，python 物件導向 [ 資源的呼叫與限制 ]</a></p>
-    </div>
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/python3/">python3</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/攻城獅的寫作練習/">攻城獅的寫作練習</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/物件導向/">物件導向</a>
+    </ul>
+    
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
         
-            前言
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;瀏覽量
+                    </span>
+                </li>
+            </a>
         
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/12/19/第一次就上手，python-物件導向限制可呼叫的資源/" target="_self">繼續閱讀</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="王性驊's avatar">
-            </div>
-            <div>
-                <strong>王性驊</strong>
-                <span>12月 19, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
+    
 
-            
+    <!-- Share Weibo -->
+    
 
-            
+    <!-- Share Twitter -->
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://books.30cm.net/2017/12/19/第一次就上手，python-物件導向限制可呼叫的資源/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
 </div>
 
-            
-            
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>上一篇的續篇，繼續講解 Class 與 Instance</p>
+</blockquote>
+<h3 id="限制可呼叫的資源"><a href="#限制可呼叫的資源" class="headerlink" title="限制可呼叫的資源"></a>限制可呼叫的資源</h3><p>前面有提到，在 Class 的內部，可以擁有兩種東西，第一種是屬性，第二種事方法，然而，外部的程式可以通過直接呼叫的方式來操作 Class 內的資訊，這樣就會隱藏 Class 內部複雜的邏輯。那你會說，是不是我透過外部的程式也可以改動內部的屬性呢？答案是肯定的，舉例來說前一篇舉的 Amimal 的類別來看，你家養的小動物可以透過</p>
+<pre class=" language-python"><code class="language-python">a <span class="token operator">=</span> Animal<span class="token punctuation">(</span><span class="token string">'18'</span><span class="token punctuation">,</span><span class="token string">'wf'</span><span class="token punctuation">,</span><span class="token string">'goodboy'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>name<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>印出來沒錯的話你應該會看到你們家的寵物叫做 goodboy，這是被允許的作用，但是如果外人可以任意改變你家心愛的小寵物的名稱，你會願意嗎？<br>舉個例子</p>
+<pre class=" language-python"><code class="language-python">a <span class="token operator">=</span> Animal<span class="token punctuation">(</span><span class="token punctuation">)</span>
+a<span class="token punctuation">.</span>name <span class="token operator">=</span> gg
+<span class="token keyword">print</span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+</code></pre>
+<p>經過上面這段程式之後，你家的小狗已經成功地被改名成 gg 了！<br>由上面的觀察可得知，其實外部的程式還是可以自由地修改一個實例的內部屬性的！<br>那你一定會問說有沒有方法可以讓內部屬性不被外面的程式給呼叫呢？</p>
+<p>答案是有的，如果要讓內部的屬性不被外部的程式呼叫的話，可以把屬性的名稱前面加上兩個下劃線 “__”，在 Python 當中，實例的變數名稱如果是以兩個下劃線開頭，就變成了一個私有變數 [ Private ]，只有內部成員可以呼叫，外部的程式就無法再呼叫她了！</p>
+<p>來吧，我們試著來改看看 Animal 吧！</p>
+<pre class=" language-python"><code class="language-python">
+<span class="token keyword">class</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token triple-quoted-string string">"""
+    宣告一個抽象的類別 Animal 
+    """</span>
+    <span class="token comment" spellcheck="true"># __init__是 python 當中的一個特殊方法，可以在一開始時，就將這個累所需要的屬性綁定，我們稱之為初始化</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> age<span class="token punctuation">,</span> sound<span class="token punctuation">,</span> 姓名<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        假設動物有三種屬性，年齡，叫聲，姓名，當然你也可以舉更多屬性
+        """</span>
+        self<span class="token punctuation">.</span>__age <span class="token operator">=</span> age
+        self<span class="token punctuation">.</span>__sound <span class="token operator">=</span> sound
+        self<span class="token punctuation">.</span>__name <span class="token operator">=</span> name
+
+    <span class="token comment" spellcheck="true"># 初始化屬性之後，動物可能會有一些動作，我們可以把它看成物件導向當中的方法（ Method ）</span>
+    <span class="token keyword">def</span> <span class="token function">run</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''動物跑步的方法'''</span>
+        <span class="token keyword">pass</span>
+
+    <span class="token keyword">def</span> <span class="token function">Animal_sounds</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''動物叫的方法'''</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>__sound<span class="token punctuation">)</span>
+</code></pre>
+<p>我已經將姓名，聲音，以及年齡都改成私有，對於外部程式來說，其實沒什麼變動，唯一的差別是，你已經無法從外面直接呼叫到 Animal 的屬性了。<br>如果像剛才一樣，將一隻動物實例化</p>
+<pre class=" language-python"><code class="language-python">    Dog <span class="token operator">=</span> Animal<span class="token punctuation">(</span><span class="token string">'18'</span><span class="token punctuation">,</span><span class="token string">'wf'</span><span class="token punctuation">,</span><span class="token string">'goodboy'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>Dog<span class="token punctuation">.</span>__name<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>如果這樣做，你會發現一件很神奇的事<br>出現了這個錯誤</p>
+<pre class=" language-"><code class="language-">Traceback (most recent call last):
+    File "<stdin>", line 2, in <module>
+AttributeError: 'Animal' object has no attribute '__name'
+</code></pre>
+<p>但是你可以透過以下方法來呼叫 Class 內部屬性的值，以動物的範例來說，想聽狗叫聲，雖然不能直接印出來，但是可以呼叫Animal 方法，來聽到叫聲唷！</p>
+<pre class=" language-python"><code class="language-python">Dog <span class="token operator">=</span> Animal<span class="token punctuation">(</span><span class="token string">'18'</span><span class="token punctuation">,</span><span class="token string">'wf'</span><span class="token punctuation">,</span><span class="token string">'goodboy'</span><span class="token punctuation">)</span>
+Dog<span class="token punctuation">.</span>Animal_sounds<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>這樣是否就可以保證，外面的程式無法任意更改物件內部的屬性，又可以取到這屬性的值了呢？</p>
+<p>那如果有修改內部的屬性的必要怎麼辦呢？其實你可以在這個類別裡，新增一個方法就好了，舉例來說，假設今天我衝物的歲數輸入錯誤怎麼辦呢？</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+    <span class="token keyword">def</span> <span class="token function">set_age</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> age<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>__age <span class="token operator">=</span> age
+</code></pre>
+<p>只要你允許的話，多新增一個類別就可以解決了～<br>或許你會問，啊直接修改就好了，幹嘛一直浪費時間在做這件事情上面呢？因為在這樣的方法中，可以對想要傳入的參數做檢驗，避免傳入錯誤的或是無效的參數。</p>
+<p>注意</p>
+<ol>
+<li><p>在 Python 的江湖當中雙下劃線 “<strong> xxx </strong>“的這種方法，是特別的系統變數，特殊的系統變數外部是可以直接存取的!也因為是系統特殊的變數，請不要用這種雙下劃線的變數來為你的變數取名字</p>
+</li>
+<li><p>只用一個下劃線 “_xxx” 命名的變數，依然是 Public 的變數，外部的程式是可以自由存取的，但是一位有公德心的攻城獅，一個下劃線的意思就是叫你請不要隨便訪問我，請把我當成私有的函數，不要亂看。</p>
+</li>
+<li><p>告訴你們一個秘密，其實雙下劃線開頭的變數，其實也是公開的，看到這裡，你一定會疑惑，剛剛如果你有動手做實驗的話，會發現明明就無法從外部存取啊，哦，原來是 Python 的解譯器將私有的變量重新命名了，”_Classname__name”，舉例來說：</p>
+</li>
+</ol>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 私有變數你可以透過下面的方式來存取</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span>Dog<span class="token punctuation">.</span>_Animal__name<span class="token punctuation">)</span>
+</code></pre>
+<p>簡單來說，你想做壞事， Python 才懶得理你呢～但這樣用會以後付出很高的代價的！</p>
+
         
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
     
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://lh3.googleusercontent.com/-KEu9zNa5Hdw/WjEWsG4R5LI/AAAAAAAAAM8/_V8kbKjtIjkis6hQWiDQEia4w39JF-8HACLcBGAs/s0/pexels-photo-698554.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/12/12/第一次就上手，python-物件導向「Class-」與「Instance」/">第一次就上手，python 物件導向「Class 」與「Instance」</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            前言
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/12/12/第一次就上手，python-物件導向「Class-」與「Instance」/" target="_self">繼續閱讀</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="王性驊's avatar">
-            </div>
-            <div>
-                <strong>王性驊</strong>
-                <span>12月 12, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
 </div>
 
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://lh3.googleusercontent.com/-XOhMIwtRY-A/Wi6jLbuywdI/AAAAAAAAAMg/0Bcla_Np5nc8zZPIIsMknRwfxe1097lrQCLcBGAs/s0/cat.png">
-    
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/12/09/嗨/">第一次就上手，Python 物件導向[簡介篇]</a></p>
-    </div>
+                
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            前言
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/12/09/嗨/" target="_self">繼續閱讀</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="王性驊's avatar">
-            </div>
-            <div>
-                <strong>王性驊</strong>
-                <span>12月 09, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://books.30cm.net/2017/12/19/第一次就上手，python-物件導向限制可呼叫的資源/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://books.30cm.net/2017/12/19/第一次就上手，python-物件導向限制可呼叫的資源/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//books.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
 </script>
 
-    
 </div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/12/12/第一次就上手，python-物件導向「Class-」與「Instance」/" id="post_nav-older" class="next-content">
+            舊篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
